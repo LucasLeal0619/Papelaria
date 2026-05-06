@@ -1,0 +1,58 @@
+/* Configurações Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container do Cabeçalho */
+#container-cabecalho {
+    background-color: #f8f9fa; /* Um cinza bem claro para o fundo */
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* Menu de Navegação usando Flexbox */
+.menu-navegacao {
+    display: flex;
+    justify-content: space-around; /* Distribui os 3 blocos com espaço igual entre eles */
+    align-items: center; /* Alinha todos verticalmente ao centro */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o menu na tela */
+}
+
+/* Estilo das Redes Sociais */
+.redes-sociais {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.icone-social {
+    width: 25px; /* Define um tamanho padrão para os ícones */
+    height: auto;
+    transition: transform 0.2s; /* Efeito suave ao passar o mouse */
+}
+
+.icone-social:hover {
+    transform: scale(1.1); /* Aumenta levemente o ícone no hover */
+}
+
+/* Estilo da Logo Central */
+.imagem-logo {
+    height: 60px; /* Ajuste conforme o tamanho da sua logo */
+}
+
+/* Estilo do Botão de Contato */
+.botao-contato {
+    background-color: #2d3436; /* Cor escura voltada para o tema "Code" */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-contato:hover {
+    background-color: #0984e3; /* Muda para um azul vibrante no hover */
+}
