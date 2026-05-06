@@ -1,0 +1,320 @@
+/* ==============================================================
+   CONFIGURAÇÕES GERAIS 
+   Limpando padrões do navegador e definindo a fonte principal.
+   ============================================================== */
+body {
+    margin: 0; /* Remove as margens padrão do navegador para o site encostar nas bordas */
+    font-family: Arial, sans-serif; /* Define uma fonte limpa e sem serifa */
+}
+
+/* ==============================================================
+   CABEÇALHO (HEADER)
+   Layout para redes sociais, logo central e botão de contato.
+   ============================================================== */
+
+/* Container externo do cabeçalho */
+#container-cabecalho {
+    background-color: #f8f9fa; /* Define um fundo cinza bem claro para destacar do corpo */
+    border-bottom: 1px solid #ddd; /* Adiciona uma linha fina cinza na parte inferior */
+    padding: 10px 0; /* Espaçamento interno em cima e embaixo */
+}
+
+/* Menu de navegação que organiza os elementos lado a lado */
+.menu-navegacao {
+    display: flex; /* Ativa o Flexbox para alinhar os itens horizontalmente */
+    justify-content: space-around; /* Distribui os 3 blocos com espaços iguais entre eles */
+    align-items: center; /* Garante que todos os itens fiquem centralizados verticalmente */
+    max-width: 1200px; /* Limita a largura do menu em telas muito grandes */
+    margin: 0 auto; /* Centraliza o container do menu na tela */
+}
+
+/* Grupo de ícones das redes sociais */
+.redes-sociais {
+    display: flex; /* Deixa os ícones um ao lado do outro */
+    gap: 15px; /* Define um espaço fixo entre cada ícone social */
+}
+
+/* Configuração individual dos ícones sociais */
+.icone-social {
+    width: 25px; /* Padroniza a largura de todos os ícones */
+    height: auto; /* Mantém a proporção da altura automaticamente */
+    transition: transform 0.2s; /* Define a velocidade da animação de hover */
+}
+
+/* Efeito de zoom ao passar o mouse no ícone social */
+.icone-social:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% */
+}
+
+/* Ajuste da imagem da Logo central */
+.imagem-logo {
+    height: 60px; /* Define uma altura fixa para a logo não quebrar o layout */
+}
+
+/* Botão de Contato no topo */
+.botao-contato {
+    background-color: #2d3436; /* Cor escura (estilo grafite/code) */
+    color: white; /* Cor do texto dentro do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 10px 20px; /* Espaçamento interno para dar tamanho ao botão */
+    border-radius: 5px; /* Arredonda levemente os cantos */
+    cursor: pointer; /* Muda o ícone do mouse para a "mãozinha" ao passar por cima */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+    transition: background-color 0.3s; /* Suaviza a troca de cor no hover */
+}
+
+/* Efeito de cor ao passar o mouse no botão de contato */
+.botao-contato:hover {
+    background-color: #0984e3; /* Muda para o azul vibrante da marca */
+}
+
+/* ==============================================================
+   SESSÃO PRINCIPAL (BANNER/HERO)
+   O destaque inicial da página.
+   ============================================================== */
+
+/* Container principal com fundo escuro */
+#sessao-principal {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza título e texto um embaixo do outro */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 60vh; /* Define a altura como 60% da altura da tela do usuário */
+    background-color: #2d3436; /* Fundo escuro estilo terminal de código */
+    color: #ffffff; /* Texto totalmente branco */
+    text-align: center; /* Centraliza o alinhamento do texto */
+    padding: 20px; /* Espaço de segurança para o texto não encostar nas bordas */
+}
+
+/* Título principal do site */
+.titulo-destaque {
+    font-size: 3rem; /* Tamanho de fonte grande e impactante */
+    margin-bottom: 10px; /* Espaço entre o título e o horário */
+    letter-spacing: 1px; /* Espaçamento elegante entre as letras */
+}
+
+/* Texto de horário de funcionamento no banner */
+.texto-horario {
+    font-size: 1.1rem; /* Tamanho levemente maior que o padrão */
+    color: #dfe6e9; /* Cinza claro para suavizar a leitura */
+    font-style: italic; /* Texto em itálico */
+    border-top: 1px solid #0984e3; /* Linha azul decorativa acima do texto */
+    display: inline-block; /* Faz a borda ter apenas o tamanho do texto */
+    padding-top: 10px; /* Espaço entre a linha azul e o texto */
+    margin-top: 5px; /* Espaço entre o título e a linha azul */
+}
+
+/* ==============================================================
+   SEÇÃO SOBRE NÓS
+   Texto descritivo sobre a Code & Paper.
+   ============================================================== */
+
+/* Container da seção sobre */
+#sobre-nos {
+    padding: 60px 20px; /* Grande espaçamento interno para separar das outras seções */
+    background-color: #ffffff; /* Fundo branco puro */
+    display: flex; /* Flexbox para centralização */
+    justify-content: center; /* Centraliza o container na tela */
+}
+
+/* Limita a largura do texto para melhor leitura */
+.container-sobre {
+    max-width: 800px; /* Impede que o texto fique muito largo em telas grandes */
+    text-align: center; /* Centraliza o texto descritivo */
+}
+
+/* Estilo dos títulos das seções */
+.subtitulo {
+    font-size: 2rem; /* Tamanho de subtítulo */
+    color: #2d3436; /* Cor grafite */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    position: relative; /* Necessário para posicionar a linha decorativa abaixo */
+    display: inline-block; /* Faz o elemento ocupar apenas o espaço do texto */
+}
+
+/* Linha azul decorativa embaixo do subtítulo Sobre Nós */
+.subtitulo::after {
+    content: ""; /* Necessário para criar elementos vazios via CSS */
+    display: block; /* Ocupa uma linha própria */
+    width: 50px; /* Comprimento da linha azul */
+    height: 3px; /* Espessura da linha azul */
+    background-color: #0984e3; /* Cor azul vibrante */
+    margin: 8px auto 0; /* Centraliza a linha embaixo do texto */
+}
+
+/* Parágrafo com a história da empresa */
+.texto-descricao {
+    font-size: 1.2rem; /* Tamanho de leitura confortável */
+    line-height: 1.8; /* Espaçamento entre linhas (melhora muito a leitura) */
+    color: #636e72; /* Cinza médio/suave */
+    margin-bottom: 30px; /* Espaço antes do horário */
+}
+
+/* Ajuste específico para o horário dentro da seção sobre */
+#sobre-nos .texto-horario {
+    color: #b2bec3; /* Cinza um pouco mais claro */
+    font-size: 0.9rem; /* Texto menor para parecer secundário */
+    border-top: 1px solid #dfe6e9; /* Linha cinza clara para separar */
+    padding-top: 15px; /* Espaço acima do texto */
+}
+
+/* ==============================================================
+   SEÇÃO DE SERVIÇOS
+   Galeria de fotos e descrição dos serviços.
+   ============================================================== */
+
+/* Fundo da seção de serviços */
+#servicos {
+    padding: 60px 20px; /* Espaçamento padrão de seção */
+    background-color: #f1f2f6; /* Cinza muito claro para diferenciar do "Sobre Nós" */
+    text-align: center; /* Centraliza títulos e textos */
+}
+
+/* Container que limita a largura da galeria */
+.container-servicos {
+    max-width: 1000px; /* Largura um pouco maior para caber 3 fotos lado a lado */
+    margin: 0 auto; /* Centraliza na tela */
+}
+
+/* Texto introdutório dos serviços */
+.texto-servicos {
+    font-size: 1.1rem;
+    color: #2d3436;
+    line-height: 1.6;
+    margin-bottom: 40px; /* Espaço grande antes das fotos */
+}
+
+/* Grid da Galeria de Fotos */
+.galeria-fotos {
+    display: flex; /* Coloca as fotos lado a lado */
+    justify-content: space-between; /* Distribui as fotos com espaço entre elas */
+    gap: 20px; /* Espaço de segurança entre cada foto */
+    flex-wrap: wrap; /* Faz as fotos irem para baixo em telas de celular */
+}
+
+/* Estilo individual de cada imagem de serviço */
+.foto-servico {
+    flex: 1; /* Faz as fotos dividirem o espaço disponível igualmente */
+    min-width: 250px; /* Largura mínima para não ficarem minúsculas */
+    max-width: 320px; /* Largura máxima para manter a estética */
+    height: 200px; /* Altura fixa para manter o alinhamento da galeria */
+    object-fit: cover; /* Corta a imagem para preencher o espaço sem esticar */
+    border-radius: 10px; /* Bordas arredondadas modernas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
+    transition: transform 0.3s ease; /* Suaviza a animação de hover */
+}
+
+/* Efeito de elevação ao passar o mouse na foto */
+.foto-servico:hover {
+    transform: translateY(-10px); /* A foto sobe 10 pixels */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra fica mais forte ao subir */
+}
+
+/* ==============================================================
+   SEÇÃO DE FORMULÁRIO (CONTATO)
+   Configuração da área onde o usuário envia mensagens.
+   ============================================================== */
+
+/* Container principal da seção de formulário */
+#formulario {
+    padding: 60px 20px; /* Espaço interno para não encostar em outras seções ou nas bordas */
+    background-color: #f5f5f0; /* Tom "Papel Premium" para diferenciar das outras seções */
+    text-align: center; /* Garante que títulos e textos de apoio fiquem centralizados */
+    
+    /* Configurações de Flexbox para centralizar o conteúdo na tela */
+    display: flex; 
+    flex-direction: column; /* Alinha o conteúdo (título e form) em coluna */
+    justify-content: center; /* Centraliza verticalmente se houver altura definida */
+    align-items: center; /* Centraliza horizontalmente todo o conteúdo interno */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+}
+
+/* Bloco que limita a largura máxima do formulário para melhor leitura */
+.container-formulario {
+    max-width: 800px; /* Impede que o formulário estique demais em monitores grandes */
+    width: 100%; /* Permite que ele seja responsivo em telas menores */
+    text-align: center; /* Reforça o alinhamento central do texto descritivo */
+    
+    /* Configurações de exibição */
+    display: block;
+    /* justify-content e align-items aqui não têm efeito sem 'display: flex', 
+       mas a centralização já é herdada pelo pai (#formulario) */
+} 
+
+/* O formulário em si e a organização dos campos */
+form {
+    display: flex; /* Ativa o flexbox para organizar labels e inputs */
+    flex-direction: column; /* Empilha os campos um embaixo do outro */
+    justify-content: center; 
+    align-items: center; /* Centraliza todos os campos (inputs e botão) horizontalmente */
+    gap: 25px; /* Cria um espaçamento uniforme e elegante entre labels, inputs e o botão */
+}
+
+/* Rótulos dos campos (ex: Nome, E-mail) */
+label {
+    display: block; /* Garante que a label ocupe sua própria linha */
+    font-weight: bold; /* Deixa o texto em negrito para facilitar a identificação */
+    color: #2d3436; /* Cor grafite para manter a identidade visual */
+}
+
+/* Campos de entrada de dados */
+input {
+    display: block; /* Garante que o input fique abaixo da label */
+    width: 100%; /* Faz o input ocupar a largura disponível do container */
+    max-width: 400px; /* Limita a largura para o campo não ficar excessivamente longo */
+    padding: 10px; /* Espaço interno para o texto digitado não encostar nas bordas */
+    border: 1px solid #ccc; /* Borda fina e discreta */
+    border-radius: 5px; /* Arredonda os cantos para combinar com o botão de contato */
+}
+
+.botao-formulario{
+    background-color: #2d3436; /* Cor escura (estilo grafite/code) */
+    color: white; /* Cor do texto dentro do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 10px 20px; /* Espaçamento interno para dar tamanho ao botão */
+    border-radius: 5px; /* Arredonda levemente os cantos */
+    cursor: pointer; /* Muda o ícone do mouse para a "mãozinha" ao passar por cima */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+    transition: background-color 0.3s; /* Suaviza a troca de cor no hover */
+}
+
+/* Efeito de cor ao passar o mouse no botão de contato */
+.botao-formulario:hover {
+    background-color: #0984e3; /* Muda para o azul vibrante da marca */
+}
+
+
+
+/* ==============================================================
+   RODAPÉ (FOOTER)
+   Finalização da página com Copyright e Logo.
+   ============================================================== */
+
+/* Container do rodapé */
+#rodape-principal {
+    background-color: #2d3436; /* Mesma cor escura do banner para fechar o site */
+    color: #ffffff; /* Texto branco */
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza todo o conteúdo */
+}
+
+/* Organização interna do rodapé */
+.conteudo-rodape {
+    display: flex; /* Ativa Flexbox */
+    flex-direction: column; /* Coloca logo e texto em pilha (vertical) */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaço entre a logo e o texto de copyright */
+}
+
+/* Estilo da logo no rodapé */
+.logo-rodape {
+    height: 50px; /* Tamanho levemente menor que no cabeçalho */
+    opacity: 0.8; /* Deixa a logo levemente transparente/discreta */
+}
+
+/* Texto de Direitos Autorais */
+.direitos-autorais {
+    font-size: 0.9rem; /* Texto pequeno e discreto */
+    color: #b2bec3; /* Cinza claro para não cansar a vista */
+    margin: 0; /* Remove margens padrão do parágrafo */
+}
