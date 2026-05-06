@@ -1,3 +1,4 @@
+
 /* ==============================================================
    CONFIGURAÇÕES GERAIS 
    Limpando padrões do navegador e definindo a fonte principal.
@@ -318,3 +319,91 @@ input {
     color: #b2bec3; /* Cinza claro para não cansar a vista */
     margin: 0; /* Remove margens padrão do parágrafo */
 }
+/* Configurações Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container do Cabeçalho */
+#container-cabecalho {
+    background-color: #f8f9fa; /* Um cinza bem claro para o fundo */
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* Menu de Navegação usando Flexbox */
+.menu-navegacao {
+    display: flex;
+    justify-content: space-around; /* Distribui os 3 blocos com espaço igual entre eles */
+    align-items: center; /* Alinha todos verticalmente ao centro */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o menu na tela */
+}
+
+/* Estilo das Redes Sociais */
+.redes-sociais {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.icone-social {
+    width: 25px; /* Define um tamanho padrão para os ícones */
+    height: auto;
+    transition: transform 0.2s; /* Efeito suave ao passar o mouse */
+}
+
+.icone-social:hover {
+    transform: scale(1.1); /* Aumenta levemente o ícone no hover */
+}
+
+/* Estilo da Logo Central */
+.imagem-logo {
+    height: 60px; /* Ajuste conforme o tamanho da sua logo */
+}
+
+/* Estilo do Botão de Contato */
+.botao-contato {
+    background-color: #2d3436; /* Cor escura voltada para o tema "Code" */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+} 
+/* Sessão Principal */
+#sessao-principal {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 60vh;            /* Ocupa 60% da altura da tela */
+    background-color: #2d3436; /* Fundo escuro (estilo terminal/code) */
+    color: #ffffff;          /* Texto branco para contraste */
+    text-align: center;      /* Centraliza o texto */
+    padding: 20px;
+}
+
+/* Título de Destaque */
+.titulo-destaque {
+    font-size: 3rem;         /* Texto grande e impactante */
+    margin-bottom: 10px;
+    letter-spacing: 1px;     /* Espaçamento elegante entre letras */
+}
+
+/* Texto do Horário */
+.texto-horario {
+    font-size: 1.1rem;
+    color: #dfe6e9;          /* Cinza claro para não tirar o foco do título */
+    font-style: italic;
+    border-top: 1px solid #0984e3; /* Linha azul fina acima do horário */
+    display: inline-block;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.botao-contato:hover {
+    background-color: #0984e3; /* Muda para um azul vibrante no hover */
+}
+
