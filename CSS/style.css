@@ -51,6 +51,35 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+} 
+/* Sessão Principal */
+#sessao-principal {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 60vh;            /* Ocupa 60% da altura da tela */
+    background-color: #2d3436; /* Fundo escuro (estilo terminal/code) */
+    color: #ffffff;          /* Texto branco para contraste */
+    text-align: center;      /* Centraliza o texto */
+    padding: 20px;
+}
+
+/* Título de Destaque */
+.titulo-destaque {
+    font-size: 3rem;         /* Texto grande e impactante */
+    margin-bottom: 10px;
+    letter-spacing: 1px;     /* Espaçamento elegante entre letras */
+}
+
+/* Texto do Horário */
+.texto-horario {
+    font-size: 1.1rem;
+    color: #dfe6e9;          /* Cinza claro para não tirar o foco do título */
+    font-style: italic;
+    border-top: 1px solid #0984e3; /* Linha azul fina acima do horário */
+    display: inline-block;
+    padding-top: 10px;
+    margin-top: 5px;
 }
 
 .botao-contato:hover {
