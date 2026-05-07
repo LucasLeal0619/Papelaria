@@ -319,11 +319,6 @@ input {
     color: #b2bec3; /* Cinza claro para não cansar a vista */
     margin: 0; /* Remove margens padrão do parágrafo */
 }
-/* Configurações Gerais */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
 /* Container do Cabeçalho */
 #container-cabecalho {
